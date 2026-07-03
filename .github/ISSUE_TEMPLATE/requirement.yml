@@ -1,4 +1,4 @@
-name: 需求
+﻿name: 需求
 description: 提交新的功能需求或业务需求
 title: "[需求] "
 labels: ["type:requirement", "status:new"]
@@ -8,7 +8,7 @@ body:
     attributes:
       label: 需求标题
       description: 一句话概括这个需求
-      placeholder: "例：NER 实体识别确认面板"
+      placeholder: "例：用户登录功能"
     validations:
       required: true
 
@@ -19,23 +19,16 @@ body:
       description: 客户的原话或原始需求描述，尽量保留原始语境
       placeholder: |
         客户原话：
-        "我们编辑新闻的时候，需要系统能自动识别里面提到的企业名字，然后让我们确认是不是对应的企业..."
+        "我们希望用户能够..."
     validations:
       required: true
 
-  - type: dropdown
+  - type: input
     id: module
     attributes:
       label: 所属模块
-      description: 这个需求属于哪个业务模块
-      options:
-        - NER 实体识别
-        - 企业库
-        - 资讯库
-        - 资源管理
-        - 标签管理
-        - 基础设施
-        - 其他
+      description: 这个需求属于哪个业务模块（请根据项目实际情况填写）
+      placeholder: "例：用户管理 / 支付模块 / 报表系统"
     validations:
       required: true
 

@@ -1,6 +1,6 @@
-# 人+AI 协作开发全流程
+﻿# 人+AI 协作开发全流程
 
-本文档描述氢界大数据平台项目的完整协作流程，以 **GitHub 为唯一中枢**，所有流转都在 GitHub 内完成，Qoder 在每个环节增强自动化能力。
+本文档描述本项目的完整协作流程，以 **GitHub 为唯一中枢**，所有流转都在 GitHub 内完成，Qoder 在每个环节增强自动化能力。
 
 ## 全景架构
 
@@ -110,7 +110,7 @@ status:confirmed → status:analyzing → status:spec-ready
 
 | 类型 | 格式 | 示例 |
 |------|------|------|
-| 功能 | `feat/<issue>-<desc>` | `feat/12-ner-confirm-panel` |
+| 功能 | `feat/<issue>-<desc>` | `feat/12-user-login` |
 | 修复 | `fix/<issue>-<desc>` | `fix/45-status-not-update` |
 | 变更 | `change/<issue>-<desc>` | `change/78-batch-confirm` |
 | 发布 | `release/v<ver>` | `release/v1.0` |
@@ -263,3 +263,4 @@ status:new → status:refining → status:confirmed → status:analyzing
 status:pending-review → status:impact-assessed → status:approved
                                              → status:rejected
 ```
+
