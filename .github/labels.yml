@@ -1,4 +1,4 @@
-﻿# Label 体系定义
+# Label 体系定义
 # 可通过 GitHub CLI 同步到仓库: gh label create "name" --description "desc" --color "color"
 # 项目使用时，根据业务模块自行添加 module:* 标签
 
@@ -68,6 +68,27 @@
 - name: "status:rejected"
   description: "变更已拒绝"
   color: "b60205"
+
+# ========== 状态标签（文档流） ==========
+- name: "doc:draft"
+  description: "文档草稿，不可作为开发依据"
+  color: "e4e669"
+
+- name: "doc:review"
+  description: "文档评审中"
+  color: "fbca04"
+
+- name: "doc:approved"
+  description: "文档已批准，可作为开发依据"
+  color: "0e8a16"
+
+- name: "doc:archived"
+  description: "文档已归档"
+  color: "c5def5"
+
+- name: "doc:needs-update"
+  description: "文档需更新（上游变更引起）"
+  color: "d73a4a"
 
 # ========== 优先级标签 ==========
 - name: "priority:P0"
