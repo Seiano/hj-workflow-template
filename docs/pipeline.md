@@ -212,6 +212,7 @@ status:pending-review → status:impact-assessed → status:approved
 | `code-review.yml` | 任何代码 PR | 自动审查代码 |
 | `assistant.yml` | Issue/PR 中 @qoder | 按需互动问答 |
 | `auto-changelog.yml` | Release 创建时 | 自动生成 Changelog |
+| `wiki-update.yml` | `docs/specs/` 有新文件合入 | Spec 内容同步到 RepoWiki |
 
 ---
 
@@ -263,4 +264,6 @@ status:new → status:refining → status:confirmed → status:analyzing
 status:pending-review → status:impact-assessed → status:approved
                                              → status:rejected
 ```
+
+
 
